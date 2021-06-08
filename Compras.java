@@ -21,3 +21,5 @@ class Compras{
 // && = AND
 // || = OR
 // Teste de mesa = ao teste de lógica da sua regra de negocio
+// ++ incrementa
+// -- decrementa
