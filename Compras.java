@@ -23,3 +23,4 @@ class Compras{
 // Teste de mesa = ao teste de lógica da sua regra de negocio
 // ++ incrementa
 // -- decrementa
+// += x = x + 20
