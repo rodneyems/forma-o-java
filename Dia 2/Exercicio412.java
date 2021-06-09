@@ -29,6 +29,30 @@ class Exercicio412{
 
     System.out.println("IMPRIMINDO: " + c1.recuperaDadosParaImpressao());
 
+    Conta c = new Conta ();
+    c.titular = "Rodney";
+    c.numero = 1234;
+    c.agencia = "ag12";
+    c.saldo = 2000;
+
+    Conta c1 = new Conta ();
+    c.titular = "Rodney";
+    c.numero = 1234;
+    c.agencia = "ag12";
+    c.saldo = 2000;
+
+    if(c1 == c){
+      System.out.println("CONTAS IGUAIS");
+    } else {
+      System.out.println("CONTAS DIFERENTES");
+    }
+    c1 = c;
+      if(c1 == c){
+        System.out.println("CONTAS IGUAIS");
+    } else {
+      System.out.println("CONTAS DIFERENTES");
+    }
+
   }
 
 }
