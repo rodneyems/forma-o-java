@@ -29,6 +29,7 @@ class Conta{
   }
 
   String recuperaDadosParaImpressao(){
-    return "titular: " + this.titular + "AG e Conta: " + this.agencia + "/" + this.numero + "saldo: " + this.saldo;
+    return "Titular: " + this.titular + " AG e Conta: " + this.agencia + "/" + this.numero + " Saldo: " + this.saldo;
   }
+  
 }
