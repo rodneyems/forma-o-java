@@ -1,0 +1,27 @@
+package br.com.caelum.contas;
+
+import br.com.caelum.javafx.api.util.Evento;
+
+public class ManipuladorDeContas {
+
+	Conta conta;
+
+	public void criaConta(Evento evento){
+		conta = new Conta();
+		conta.setAgencia("12x");
+		conta.setNumero(1234);
+		conta.setTitular("Zé");
+		
+	}
+	public void saque(Evento evento) {
+		double valorDigitado = evento.getDouble("valor");
+	}
+	
+	public void deposita(Evento evento) {
+		double valorDigitado = evento.getDouble("valor");
+		conta.deposita(valorDigitado);
+	}
+
+}
+
+}
