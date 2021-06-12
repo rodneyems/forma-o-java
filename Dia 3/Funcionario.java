@@ -1,8 +1,8 @@
-class Funcionario{
+public class Funcionario{
   private String nome;
   private double salario;
   private double comissao; // Variavel de isntancia (do obj)
-  static private double premio // Static siginifica que a variavel eh para a classe e nao soh pela instancia
+  static private double premio; // Static siginifica que a variavel eh para a classe e nao soh pela instancia
   
   // Exige que o nome seja fornecido
   Funcionario (String nome){
@@ -18,20 +18,23 @@ class Funcionario{
   
   // Getter e setter comissao
   void setComissao(double comissao){
-    this.comissao = comissao
+    this.comissao = comissao;
   }
   double getComissao(){
-    return this.comissao
+    return this.comissao;
   }
   
   // Getter e setter premio
   static void setPremio(double premio){
-    Funcionario.premio = premio // Nao podemos colocar this pois nao eh da instancia e sim da classe
+    Funcionario.premio = premio; // Nao podemos colocar this pois nao eh da instancia e sim da classe
   }
   static double getpremio(){
-    return Funcionario.premio
+    return Funcionario.premio;
   }
 
+  public String getNome(){
+    return this.nome;
+  }
 
   // Garantir que o salario sempre sera maior que 1k
   void setSalario(double salario){
