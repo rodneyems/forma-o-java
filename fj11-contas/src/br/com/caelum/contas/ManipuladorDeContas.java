@@ -30,7 +30,7 @@ public class ManipuladorDeContas {
 		
 		if	(this.conta.getTipo().equals("Conta	Corrente")){
 			this.conta.saca(valor);
-		} else if (this.conta.getTipo().equals("Conta Poupanca")) {
+		} else if (this.conta.getTipo().equals("Conta Poupança")) {
 			this.conta.saca(valor);
 		}
 	}

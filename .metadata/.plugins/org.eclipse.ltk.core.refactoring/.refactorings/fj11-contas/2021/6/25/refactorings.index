@@ -7,3 +7,5 @@
 1623795997372	Delete element
 1623800750597	Rename type 'TestaContas'
 1623800856469	Rename type 'TestaConta'
+1623860394121	Encapsulate field 'total'
+1623862822225	Convert local variable 'total' to field

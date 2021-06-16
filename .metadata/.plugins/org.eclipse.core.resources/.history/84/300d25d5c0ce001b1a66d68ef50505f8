@@ -1,0 +1,31 @@
+package br.com.caelum.contas;
+
+import br.com.caelum.contas.modelo.Tributavel;
+import br.com.caelum.javafx.api.util.Evento;
+
+public class ManipuladorDeTributaveis {
+	private static double total;
+	
+	public int listaTributaveis(Evento evento) {
+		return evento.getTamanhoDaLista("listaTributaveis");
+	}
+	
+	
+	public double calculaImpostos(Evento evento) {
+		for (int i = 0; i <= listaTributaveis(evento); i++) {
+			Tributavel tributavel = evento.getTributavel("listaTributaveis",	i);
+			setTotal(getTotal() + tributavel.getValorImposto());
+		;
+		return total;
+	}
+
+
+	public static double getTotal() {
+		return total;
+	}
+
+
+	public static void setTotal(double total) {
+		ManipuladorDeTributaveis.total = total;
+	}
+}
