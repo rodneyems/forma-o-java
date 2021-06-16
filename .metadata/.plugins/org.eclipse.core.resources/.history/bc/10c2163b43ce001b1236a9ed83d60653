@@ -1,0 +1,10 @@
+package br.com.caelum.contas.modelo;
+
+public class SeguroDeVida implements Tributavel {
+	private double valor;
+	private String titular;
+	
+	public double getValorImposto() {
+		return this.valor;
+	}
+}

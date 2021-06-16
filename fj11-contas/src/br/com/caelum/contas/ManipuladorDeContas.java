@@ -44,7 +44,8 @@ public class ManipuladorDeContas {
 
 	public void transfere(Evento evento) {
 		Conta destino = ((Conta) evento.getSelecionadoNoCombo("destino"));
-		this.conta.transfere(evento.getDouble("valorTransferencia"), destino);
+		double valor = evento.getDouble("valorTransferencia");
+		this.conta.transfere(valor, destino);
 	}
 
 }
