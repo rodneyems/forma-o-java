@@ -1,0 +1,12 @@
+package br.com.caelum.contas.modelo;
+
+public class SaldoInsuficienteException extends RuntimeException {
+	SaldoInsuficienteException(String message){
+		getMessage(message);
+	}
+	@Override
+	public String getMessage(String message) {
+		return message;
+	}
+}
+	

@@ -4,7 +4,8 @@
 <fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Conta"/>
 <fullyQualifiedTypeName name="br.com.caelum.javafx.api.main.TelaDeContas"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
-<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Tributavel"/>
 <fullyQualifiedTypeName name="br.com.caelum.contas.modelo.SeguroDeVida"/>
 <fullyQualifiedTypeName name="br.com.caelum.javafx.api.util.Evento"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.modelo.Tributavel"/>
+<fullyQualifiedTypeName name="br.com.caelum.contas.ManipuladorDeTributaveis"/>
 </qualifiedTypeNameHistroy>

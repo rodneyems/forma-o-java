@@ -6,7 +6,13 @@ public class ContaCorrente extends Conta implements Tributavel{
 	}
 	@Override
 	public void saca(double valor) {
-		this.saldo -= valor + 0.10;
+		if (valor < 0) {
+			throw new IllegalArgumentException("Valor inválido");
+		}else if (valor > getSaldo()) {
+			throw new SaldoInsuficienteException("Saldo não disponível");
+		}else {
+			this.saldo -= valor + 0.10;
+		}
 	}
 	public double getValorImposto() {
 		return this.saldo * 0.01;
